@@ -34,7 +34,10 @@
             let pictureUrl = profile.pictureUrl;
             let url = "https://script.google.com/macros/s/AKfycbxRMuHPQPk4jfyBqGHfWr-078ky8V-nx1aiwSxpZ0_KIfDJpc17E-Yyuezx7ejOrkc_/exec"+
                 "?userId=" + encodeURIComponent(userId) +
-                "&displayName=" + encodeURIComponent(displayName);
+                "&displayName=" + encodeURIComponent(displayName) + 
+                "&pictureUrl=" + encodeURIComponent(pictureUrl);
+
+            
              document.getElementById("formframe").src = url;
 
         }).catch(err => console.error(err));
@@ -51,6 +54,7 @@
 </script>
 
 </html>
+
 
 
 
